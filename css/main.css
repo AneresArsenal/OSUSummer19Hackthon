@@ -4,6 +4,15 @@ body {
     background-color: #333;
   }
   
+  h2 {
+    font-family: "Gloria Hallelujah", cursive;
+    color: whitesmoke;
+    font-size: 20pt;
+    line-height: 1.5;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   #countdown {
     position: relative;
     margin: auto;
@@ -49,4 +58,42 @@ body {
     to {
       stroke-dashoffset: 250px;
     }
+  }
+
+
+#button {
+  margin-top:5%;
+  margin-left: 44%;
+}  
+
+  a.button1 {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 10px;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size:15pt;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 1s;
+}
+
+.button1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.bouncy {
+  animation: bouncy 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+  @-webkit-keyframes bouncy { 
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
   }
