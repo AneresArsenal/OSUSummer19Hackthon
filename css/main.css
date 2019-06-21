@@ -14,10 +14,14 @@ body {
   }
   
   #countdown-number {
-    color: white;
+    color: rgb(243, 239, 239);
     display: inline-block;
-    margin-top: 45%;
-    margin-left: 60%;
+    font-size: 20;
+    margin-left: 55px;
+    margin-top: 25px;
+    position: relative;
+    height: 50px;
+    width: 50px;
     line-height: 50%;
   }
   
