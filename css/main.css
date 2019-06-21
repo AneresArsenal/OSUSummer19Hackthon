@@ -16,7 +16,7 @@ body {
   #countdown-number {
     color: rgb(243, 239, 239);
     display: inline-block;
-    font-size: 20;
+    font-size: 20pt;
     margin-left: 55px;
     margin-top: 25px;
     position: relative;
