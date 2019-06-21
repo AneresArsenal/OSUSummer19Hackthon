@@ -14,9 +14,7 @@ body {
   }
   
   #countdown-number {
-    color: rgb(243, 239, 239);
-    display: inline-block;
-    font-size: 20pt;
+    display: contents;
     margin-left: 55px;
     margin-top: 25px;
     position: relative;
@@ -41,7 +39,7 @@ body {
     stroke-width: 2px;
     stroke: white;
     fill: none;
-    animation: countdown 1000s linear infinite forwards;
+    animation: countdown 1800s linear infinite forwards;
   }
   
   @keyframes countdown {
