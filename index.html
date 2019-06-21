@@ -62,6 +62,46 @@
   <a href="something" class="button1 bouncy">Start</a>
   <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Reset</a>
   </div>
+
+
+  <div id="table" class="table-editable">
+      <span class="table-add glyphicon glyphicon-plus"></span>
+      <table class="table">
+        <tr>
+          <th>Task #</th>
+          <th>Description</th>
+          <th>Completed?</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td contenteditable="true">1</td>
+          <td contenteditable="true">Prepare report</td>
+          <td contenteditable="true">50%</td>
+          <td>
+            <span class="table-remove glyphicon glyphicon-remove"></span>
+          </td>
+          <td>
+            <span class="table-up glyphicon glyphicon-arrow-up"></span>
+            <span class="table-down glyphicon glyphicon-arrow-down"></span>
+          </td>
+        </tr>
+        <!-- This is our clonable table line -->
+        <tr class="hide">
+          <td contenteditable="true">Untitled</td>
+          <td contenteditable="true">undefined</td>
+          <td contenteditable="true">undefined</td>
+          <td>
+            <span class="table-remove glyphicon glyphicon-remove"></span>
+          </td>
+          <td>
+            <span class="table-up glyphicon glyphicon-arrow-up"></span>
+            <span class="table-down glyphicon glyphicon-arrow-down"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
