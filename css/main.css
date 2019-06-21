@@ -79,7 +79,7 @@ body {
     font-size:15pt;
     color: #FFFFFF;
     text-align: center;
-    transition: all 1s;
+    transition: all 0.2s;
 }
 
 .button1:hover {
@@ -107,6 +107,11 @@ body {
     text-align: center;
 }
 
+th {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 30px;
+
+  }
   .table-editable {
     position: relative;
   }
