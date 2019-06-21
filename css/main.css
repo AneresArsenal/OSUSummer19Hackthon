@@ -7,16 +7,16 @@ body {
   h2 {
     font-family: "Gloria Hallelujah", cursive;
     color: whitesmoke;
-    font-size: 20pt;
+    font-size: 18pt;
     line-height: 1.5;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20%;
     margin-right: 20%;
   }
   #countdown {
     position: relative;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     height: 100px;
     width: 100px;
     text-align: center;
@@ -62,7 +62,7 @@ body {
 
 
 #button {
-  margin-top:5%;
+  margin-top:15px;
   margin-left: 44%;
 }  
 
@@ -146,3 +146,17 @@ th {
     color: #0b0;
   }
   
+
+.w3-green, .w3-hover-green:hover {
+    color: #fff!important;
+    background-color: #4CAF50!important;
+    margin-left: 20%;
+}
+
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+    width:50%;
+    height: 25px;
+    margin-left: 20%;
+}
