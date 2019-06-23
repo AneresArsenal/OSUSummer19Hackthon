@@ -21,23 +21,12 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="stylesheet" type="text/css" href="css/tomato.css" />
-  <!--<link rel="stylesheet" href="css/normalize.css">-->
-  <!--<link rel="stylesheet" href="css/skeleton.css">-->
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/tomato.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/countdown.css" />
   <link rel="stylesheet" href="css/jquery.progressbar.css">
-
-
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
@@ -62,7 +51,10 @@
         </div>
       </div>
     </div>
-
+    <div id="countdown">
+      <div id="countdown-number">
+      </div>
+    </div>
     <div class="bottom">
       <div class="tomato">
       </div>
@@ -70,19 +62,11 @@
   </div>
 </div>
 
-<div id="countdown">
-  <div id="countdown-number"></div>
-  <svg>
-    <circle r="40" cx="150" cy="120"></circle>
-  </svg>
-</div>
-
   <!-- Source: https://fdossena.com/?p=html5cool/buttons/i.frag-->
 <div id="button">
   <a href="something" class="button1 bouncy">Start</a>
   <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Reset</a>
 </div>
-
 
 <!--source: https://codepen.io/ashblue/pen/mCtuA-->
 <div id="table" class="table-editable">
@@ -162,11 +146,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--script src="dist/bundle-api.js"></script-->
 <script src="js/tomato.js"></script>
-
-<!-- Progress bar (https://www.jqueryscript.net/form/Responsive-Progress-Bar-With-Steps.html)
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/jquery.progressbar.js"></script>
 <script src="js/progressbar.js"></script>
+<script src="js/countdown.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
