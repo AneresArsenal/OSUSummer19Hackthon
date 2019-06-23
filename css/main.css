@@ -56,6 +56,14 @@ body div.container {
     100% { transform: translateY(-30px); }
   }
 
+@import "compass/css3";
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 .table {
     width: 50%;
     margin: 20px auto;
@@ -69,51 +77,55 @@ th {
     font-size: 25px;
 
   }
-  .table-editable {
-    position: relative;
-  }
-  .table-editable .glyphicon {
-    font-size: 20px;
-  }
 
-  .table-remove {
-    color: #700;
-    cursor: pointer;
-  }
-  .table-remove:hover {
-    color: #f00;
-  }
+.table-editable {
+  position: relative;
+}
+.table-editable .glyphicon {
+  font-size: 20px;
+}
 
-  .table-up, .table-down {
-    color: #007;
-    cursor: pointer;
-  }
-  .table-up:hover, .table-down:hover {
-    color: #00f;
-  }
+.table-remove {
+  color: #700;
+  cursor: pointer;
+}
+.table-remove:hover {
+  color: #f00;
+}
 
-  .table-add {
-    color: #070;
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 0;
-  }
-  .table-add:hover {
-    color: #0b0;
-  }
+.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+}
+.table-up:hover, .table-down:hover {
+  color: #00f;
+}
 
+.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.table-add:hover {
+  color: #0b0;
+}
 
 .w3-green, .w3-hover-green:hover {
-    color: #fff!important;
-    background-color: #4CAF50!important;
-    margin-left: 20%;
+  color: #fff!important;
+  background-color: #4CAF50!important;
+  margin-left: 20%;
 }
 
 
 .w3-container, .w3-panel {
-    padding: 0.01em 16px;
-    width:50%;
-    height: 25px;
-    margin-left: 20%;
+  padding: 0.01em 16px;
+  width:50%;
+  height: 25px;
+  margin-left: 20%;
+}
+
+.glyphicon-plus {
+  margin-right: 30%;
 }
