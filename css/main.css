@@ -56,6 +56,7 @@ body div.container {
     100% { transform: translateY(-30px); }
   }
 
+@import "compass/css3";
 .table {
     width: 50%;
     margin: 20px auto;
@@ -69,8 +70,6 @@ th {
     font-size: 25px;
 
   }
-
-@import url("compass/css3");
 
 .table-editable {
   position: relative;
