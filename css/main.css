@@ -69,51 +69,57 @@ th {
     font-size: 25px;
 
   }
-  .table-editable {
-    position: relative;
-  }
-  .table-editable .glyphicon {
+
+@import url("compass/css3");
+
+.table-editable {
+  position: relative;
+
+}
+.table-editable .glyphicon {
     font-size: 20px;
   }
 
-  .table-remove {
-    color: #700;
-    cursor: pointer;
-  }
-  .table-remove:hover {
-    color: #f00;
-  }
+.table-remove {
+  color: #700;
+  cursor: pointer;
+}
+.table-remove:hover {
+  color: #f00;
+}
 
-  .table-up, .table-down {
-    color: #007;
-    cursor: pointer;
-  }
-  .table-up:hover, .table-down:hover {
-    color: #00f;
-  }
 
-  .table-add {
-    color: #070;
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 0;
-  }
-  .table-add:hover {
-    color: #0b0;
-  }
+.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+}
+.table-up:hover, .table-down:hover {
+  color: #00f;
+}
+
+
+.table-add {
+  color: #070;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.table-add:hover {
+  color: #0b0;
+}
 
 
 .w3-green, .w3-hover-green:hover {
-    color: #fff!important;
-    background-color: #4CAF50!important;
-    margin-left: 20%;
+  color: #fff!important;
+  background-color: #4CAF50!important;
+  margin-left: 20%;
 }
 
 
 .w3-container, .w3-panel {
-    padding: 0.01em 16px;
-    width:50%;
-    height: 25px;
-    margin-left: 20%;
+  padding: 0.01em 16px;
+  width:50%;
+  height: 25px;
+  margin-left: 20%;
 }
