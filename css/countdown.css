@@ -1,17 +1,24 @@
 #countdown {
-  position: relative;
+  position: static;
   margin: auto;
-  margin-top: 100px;
   height: 100px;
-  width: 100px;
+  width: 300px;
+
   text-align: center;
+
 }
 
 #countdown-number {
   color: white;
-  display: inline-block;
+  font-size: 80px;
+  display: inline;
+  position: absolute;
+  top: 90px;
+  left: 330px;
+/*
   margin-top: 45%;
   margin-left: 60%;
+*/
   line-height: 50%;
 }
 
