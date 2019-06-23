@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
 
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Your page title here :)</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pomodoro Breaks</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Gloria+Hallelujah|Permanent+Marker|Raleway&display=swap" rel= "stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -25,25 +26,28 @@
   <!--<link rel="stylesheet" href="css/normalize.css">-->
   <!--<link rel="stylesheet" href="css/skeleton.css">-->
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/jquery.progressbar.css">
-
-    <!-- Progress bar (https://www.jqueryscript.net/form/Responsive-Progress-Bar-With-Steps.html)
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="js/jquery.progressbar.js"></script>
-    <script src="js/progressbar.js"></script>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/jquery.progressbar.css">
 
 
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
+
+  <h2>
+    Work can get busy, we have all been there.
+    We also know our focus and productivity deteriorates as the day goes on.
+    Taking a break is key to give our brain a recharge!
+    Hence why we created this app to help us with that.
+    30 min work sprints + 5-10 min breaks = Aweseome you!
+  </h2>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,6 +59,7 @@
       <div id="tomatoFill">
       </div>
     </div>
+  </div>
 
   <div class="bottom">
     <div class="tomato">
@@ -62,34 +67,105 @@
   </div>
 </div>
 
+<div id="countdown">
+  <div id="countdown-number"></div>
+  <svg>
+    <circle r="40" cx="150" cy="120"></circle>
+  </svg>
+</div>
+
+  <!-- Source: https://fdossena.com/?p=html5cool/buttons/i.frag-->
+<div id="button">
+  <a href="something" class="button1 bouncy">Start</a>
+  <a href="something" class="button1 bouncy" style="animation-delay:0.07s">Reset</a>
+</div>
+
+
+<h2> Progress for the Day!</h2>
+<div class="w3-light-grey">
+  <div id="myBar" class="w3-container w3-green" style="width:20%">
+    20%
+  </div>
+  <br>
+  <button class="w3-button w3-green" onclick="move()">Click Me</button>
+</div>
+
+
+<!--source: https://codepen.io/ashblue/pen/mCtuA-->
+<div id="table" class="table-editable">
+  <span class="table-add glyphicon glyphicon-plus"></span>
+  <table class="table">
+    <tr>
+      <th>Task #</th>
+      <th>Description</th>
+      <th>Completed?</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td contenteditable="true">1</td>
+      <td contenteditable="true">Prepare report</td>
+      <td contenteditable="true">50%</td>
+      <td href="something" class="button1">Done</td>
+      <td>
+        <span class="table-remove glyphicon glyphicon-remove"></span>
+      </td>
+      <td>
+        <span class="table-up glyphicon glyphicon-arrow-up"></span>
+        <span class="table-down glyphicon glyphicon-arrow-down"></span>
+      </td>
+    </tr>
+    <!-- This is our clonable table line -->
+    <tr class="hide">
+      <td contenteditable="true">Untitled</td>
+      <td contenteditable="true">undefined</td>
+      <td contenteditable="true">undefined</td>
+      <td href="something" class="button1">Add new task</td>
+      <td>
+        <span class="table-remove glyphicon glyphicon-remove"></span>
+      </td>
+      <td>
+        <span class="table-up glyphicon glyphicon-arrow-up"></span>
+        <span class="table-down glyphicon glyphicon-arrow-down"></span>
+      </td>
+    </tr>
+  </table>
+</div>
+
 <!-- API Selection Modal -->
-  <div class="modal fade" id="apiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog .modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="container-fluid">
-            <span class="col" id="cat-facts-select">
-              Cat Facts
-            </span>
-            <span class="col" id="history-facts-select">
-              History Trivia
-            </span>
-            <span class="col" id="general-trivia-select">
-              General Trivia
-            </span>
-          </div>
+<div class="modal fade" id="apiModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog .modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <span class="col" id="cat-facts-select">
+            Cat Facts
+          </span>
+          <span class="col" id="history-facts-select">
+            History Trivia
+          </span>
+          <span class="col" id="general-trivia-select">
+            General Trivia
+          </span>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!--script src="dist/bundle-api.js"></script-->
-  <script src="js/tomato.js"></script>
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--script src="dist/bundle-api.js"></script-->
+<script src="js/tomato.js"></script>
+
+<!-- Progress bar (https://www.jqueryscript.net/form/Responsive-Progress-Bar-With-Steps.html)
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/jquery.progressbar.js"></script>
+<script src="js/progressbar.js"></script>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
