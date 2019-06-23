@@ -5,7 +5,7 @@
 
 ### <span class="c22">OSU Summer 2019 Hackathon - A Team That Has No Name</span>
 
-<span class="c21">Team members:</span>
+## <span class="c21">Team members:</span>
 
 <span class="c19">Greg Healy -</span> <span class="c18">[GregoryPHealy](https://www.google.com/url?q=https://github.com/gregoryphealy&sa=D&ust=1561336064334000)</span>
 
@@ -19,19 +19,19 @@
 
 </div>
 
-<span class="c4">Github Repo</span> <span class="c0"> </span>
+## <span class="c4">Github Repo</span> <span class="c0"> </span>
 
 <span class="c9">[https://github.com/AneresArsenal/OSUSummer19Hackthon](https://www.google.com/url?q=https://github.com/AneresArsenal/OSUSummer19Hackthon&sa=D&ust=1561336064328000)</span>
 
 <span class="c15"></span>
 
-<span class="c1">App Name</span>
+## <span class="c1">App Name</span>
 
 <span class="c26">Tomato-TimeOut-o</span>
 
 <span class="c1"></span>
 
-<span class="c1">Theme</span>
+## <span class="c1">Theme</span>
 
 <span class="c23">Time</span>
 
@@ -41,7 +41,7 @@
 
 <span class="c15"></span>
 
-<span class="c1">Programming languages and Technologies to be used</span>
+## <span class="c1">Programming languages and Technologies to be used</span>
 
 *   <span class="c0">Javascript</span>
 *   <span class="c0">HTML and CSS(Sass)</span>
@@ -54,7 +54,7 @@
 
 <span class="c1"></span>
 
-<span class="c4">Project Idea</span>
+## <span class="c4">Project Idea</span>
 
 <span class="c25">A web page that deploys the</span> <span class="c6">[Pomodoro Technique](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Pomodoro_Technique&sa=D&ust=1561336064330000)</span><span class="c0"> to encourage users to take breaks between work activities. Users will have 30-minute intervals to focus on their tasks and once the time is up, the web page would display a break activity for the users to participate in.</span>
 
@@ -64,7 +64,7 @@
 
 <span class="c0"></span>
 
-<span class="c1">List of Activities</span>
+## <span class="c1">List of Activities</span>
 
 *   <span class="c6">[Sporcle](https://www.google.com/url?q=https://www.sporcle.com/&sa=D&ust=1561336064330000)</span>
 *   <span class="c6">[Headspace](https://www.google.com/url?q=https://www.headspace.com/headspace-meditation-app&sa=D&ust=1561336064330000)</span>
@@ -73,7 +73,7 @@
 
 <span class="c0"></span>
 
-<span class="c1">Web Page Design and Functionality</span>
+## <span class="c1">Web Page Design and Functionality</span>
 
 <span class="c24 c13">Design:</span>
 
