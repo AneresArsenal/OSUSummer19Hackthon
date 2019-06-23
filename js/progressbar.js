@@ -14,16 +14,17 @@ function progressBar() {
 }
 
 $(document).on("click", "#trigger", function () {
+
+    $('#steps').html("");
+    array[step] = array[step].replace('@', '');
+
     if (step < 3) {
-        $('#steps').html("");
-        array[step] = array[step].replace('@', '');
+
         array[step + 1] += '@';
         step++;
     }
     else {
 
-        $('#steps').html("");
-        array[step] = array[step].replace('@', '');
         step = 0;
         array[step] += '@';
     }
