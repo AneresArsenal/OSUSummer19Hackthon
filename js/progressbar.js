@@ -1,4 +1,4 @@
-var array = ['@Setp 1', 'tep 2 Failed', 'tep 3 ( Current )', 'tep 4', ];
+var array = ['@Round 1', 'Round 2', 'Round 3', 'Round 4', ];
 var step = 0;
 
 jQuery(document).ready(function ($) {
