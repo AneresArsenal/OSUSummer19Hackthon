@@ -3,6 +3,8 @@ ul.progressbar {
   height: 75px;
   padding: 0;
   counter-reset: step;
+  width: 50%;
+  margin: 10px auto;
 }
 ul.progressbar li {
   list-style-type: none;
