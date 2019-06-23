@@ -1,5 +1,6 @@
 const workTime = 1500;
 const restTime = 300;
+var roundsComplete = 0;
 var countdown;
 var pauseActive = false;
 var intervalID;
@@ -69,6 +70,7 @@ function restBreak() {
     countdownNumberEl.textContent = toTime(countdown);
   }, 1000);
   alert('Take a break!');
+
 }
 
 function toTime (val) {
