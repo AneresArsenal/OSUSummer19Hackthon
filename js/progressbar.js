@@ -1,5 +1,12 @@
 var array = ['@Round 1', 'Round 2', 'Round 3', 'Round 4', ];
-var step = 0;
+var interval = 0;
+
+$(document).on("click", "#trigger", function(){
+    triggerProgress(interval);
+    interval++;
+
+});
+
 
 jQuery(document).ready(function ($) {
 
@@ -13,7 +20,7 @@ function progressBar() {
     });
 }
 
-$(document).on("click", "#trigger", function () {
+function triggerProgress(step) {
 
     $('#steps').html("");
     array[step] = array[step].replace('@', '');
@@ -21,13 +28,13 @@ $(document).on("click", "#trigger", function () {
     if (step < 3) {
 
         array[step + 1] += '@';
-        step++;
     }
     else {
 
         step = 0;
+        interval = 0;
         array[step] += '@';
     }
 
     progressBar();
-});
+};
