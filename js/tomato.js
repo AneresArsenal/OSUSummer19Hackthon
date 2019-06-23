@@ -1,6 +1,8 @@
+const workTime = 1500;
+const restTime = 300;
 var countdown;
 var pauseActive = false;
-var pauseID;
+var intervalID;
 var countdownNumberEl = document.getElementById("countdown-number");
 
 $('.full-tomato').click((event) => {
@@ -14,32 +16,61 @@ $('.full-tomato').click((event) => {
 })
 
 function startTimer() {
+  window.clearInterval(intervalID);
   pauseActive = false;
   $('.full-tomato').addClass('split');
 
   //Set timer to 25 mins if not in the middle of a pause
-  if (!pauseActive) { var countdown = 25 * 60; }
+  if (!pauseActive) { var countdown = workTime; }
 
-  countdownNumberEl.textContent = Math.floor(countdown/60) + ':' + (countdown%60).toString().padStart(2, '0');
+  countdownNumberEl.textContent = toTime(countdown);
 
-  pauseID = setInterval(function() {
-    countdown = --countdown <= 0 ? 0 : countdown;
-    countdownNumberEl.textContent = Math.floor(countdown/60) + ':' + (countdown%60).toString().padStart(2, '0');
+  intervalID = setInterval(function() {
+    --countdown;
+    if (countdown <= 0) {
+      countdown = 0;
+      restBreak();
+    }
+    countdownNumberEl.textContent = toTime(countdown);
   }, 1000);
+  alert('Start working!');
 }
 
 function pauseTimer() {
   $('.full-tomato').removeClass('split');
   pauseActive = true;
-  window.clearInterval(pauseID);
+  window.clearInterval(intervalID);
 }
 
 function restartTimer() {
   console.log('restart at: ', countdown);
   pauseActive = false;
   $('.full-tomato').addClass('split');
-  pauseID = setInterval(function() {
-    countdown = --countdown <= 0 ? 0 : countdown;
-    countdownNumberEl.textContent = Math.floor(countdown/60) + ':' + (countdown%60).toString().padStart(2, '0');
+  intervalID = setInterval(function() {
+    --countdown;
+    if (countdown <= 0) {
+      countdown = 0;
+      restBreak();
+    }
+    countdownNumberEl.textContent = toTime(countdown);
   }, 1000);
+}
+
+function restBreak() {
+  //End the current work interval
+  window.clearInterval(intervalID);
+  countdown = restTime;
+  intervalID = setInterval(function() {
+    --countdown;
+    if (countdown <= 0) {
+      countdown = 0;
+      startTimer();
+    }
+    countdownNumberEl.textContent = toTime(countdown);
+  }, 1000);
+  alert('Take a break!');
+}
+
+function toTime (val) {
+  return Math.floor(val/60).toString().padStart(2, '0') + ':' + (val%60).toString().padStart(2, '0');
 }
