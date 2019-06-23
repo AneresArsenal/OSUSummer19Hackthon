@@ -73,11 +73,10 @@ th {
 
 .table-editable {
   position: relative;
-
 }
 .table-editable .glyphicon {
-    font-size: 20px;
-  }
+  font-size: 20px;
+}
 
 .table-remove {
   color: #700;
@@ -87,7 +86,6 @@ th {
   color: #f00;
 }
 
-
 .table-up, .table-down {
   color: #007;
   cursor: pointer;
@@ -95,7 +93,6 @@ th {
 .table-up:hover, .table-down:hover {
   color: #00f;
 }
-
 
 .table-add {
   color: #070;
@@ -107,7 +104,6 @@ th {
 .table-add:hover {
   color: #0b0;
 }
-
 
 .w3-green, .w3-hover-green:hover {
   color: #fff!important;
