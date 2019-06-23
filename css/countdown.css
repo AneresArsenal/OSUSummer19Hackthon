@@ -3,9 +3,7 @@
   margin: auto;
   height: 100px;
   width: 300px;
-
   text-align: center;
-
 }
 
 #countdown-number {
@@ -13,12 +11,8 @@
   font-size: 80px;
   display: inline;
   position: absolute;
-  top: 90px;
-  left: 330px;
-/*
-  margin-top: 45%;
-  margin-left: 60%;
-*/
+  top: 110px;
+  left: 385px;
   line-height: 50%;
 }
 
