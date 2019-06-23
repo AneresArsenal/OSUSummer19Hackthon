@@ -1,5 +1,5 @@
 (function($) {
-  $.fn.progressbar = function (options) {
+    $.fn.progressbar = function (options) {
 
     var opts = $.extend({ }, options);
 
