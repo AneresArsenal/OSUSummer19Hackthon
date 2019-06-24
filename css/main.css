@@ -9,8 +9,18 @@ body div.container {
   margin-top: 50px;
 }
 
+h1 {
+  color: whitesmoke;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2#toBegin {
+  text-align: center;
+}
+
   h2 {
-    font-family: "Gloria Hallelujah", cursive;
     color: whitesmoke;
     font-size: 18pt;
     line-height: 1.5;
@@ -73,10 +83,8 @@ body div.container {
 }
 
 th {
-    font-family: "Gloria Hallelujah", cursive;
     font-size: 25px;
-
-  }
+}
 
 .table-editable {
   position: relative;
