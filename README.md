@@ -82,11 +82,6 @@
 *   <span class="c13">Break Activities -</span> <span class="c0">Once the 30-minute interval is up, it will reveal a break activity</span>
 *   <span class="c13">To-do List Board -</span> <span class="c0">A task board for users to identify key tasks to tackle for the 30-minute focus sprints</span>
 *   <span class="c13">Progress Status -</span><span class="c0"> A progress icon to show how many tasks have been tackled OR how many breaks were taken (relative to an ideal # of breaks suggested for the day)</span>
-*   <span class="c0">Sample websites for colour themes/design ideas:</span>
-
-*   <span class="c6">[Headspace](https://www.google.com/url?q=https://www.headspace.com/headspace-meditation-app&sa=D&ust=1561336064331000)</span>
-*   <span class="c6">[Procurify](https://www.google.com/url?q=https://www.procurify.com/product&sa=D&ust=1561336064332000)</span>
-*   <span class="c6">[Jam3](https://www.google.com/url?q=https://we3.jam3.com/home&sa=D&ust=1561336064332000)</span>
 
 <span class="c14"></span>
 
